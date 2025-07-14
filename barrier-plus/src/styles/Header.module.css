@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: #E0E0E0;
+    background-color: #C2B280;
+}
+.logo {
+    font-size: 28px;
+}
