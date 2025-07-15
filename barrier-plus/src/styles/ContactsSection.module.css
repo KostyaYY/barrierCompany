@@ -1,0 +1,97 @@
+.contactsSection {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contactsContainer {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactBlock {
+  min-width: 250px;
+}
+
+.contactBlock h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.contactBlock p {
+  margin: 5px 0;
+}
+
+.contactBlock a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.contactBlock a:hover {
+  text-decoration: underline;
+}
+
+.formContainer {
+  flex: 1;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.formContainer h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactForm label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contactForm input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm button {
+  padding: 12px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+  background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+  .contactsSection {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .contactsContainer {
+    min-width: 100%;
+  }
+
+  .formContainer {
+    max-width: 100%;
+  }
+}

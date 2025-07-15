@@ -1,13 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from '../components/Header';
+// import ContactsSection from '../components/ContactsSection';
 
 export default function Home() {
   return (
     <div>
       <Header/>
-      <main className={styles.main}>
-        
+      <main id="products" className={styles.main}>
+        {/* <ContactsSection /> */}
         <Image
           className={styles.logo}
           src="/next.svg"
