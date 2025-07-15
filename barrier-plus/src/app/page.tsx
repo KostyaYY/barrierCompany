@@ -1,13 +1,15 @@
-import Image from "next/image";
+// import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
-import Header from '../components/Header';
-import Layout from '../components/Layout';
+// import Header from '../components/Header';
+// import Layout from '../components/Layout';
 // import ContactsSection from '../components/ContactsSection';
 
 export default function Home() {
   return (
-    <Layout>
-      <Header/>
+    // <Layout>
+    <>
+      {/* <Header/> */}
       <main id="products" className={styles.main}>
         {/* <ContactsSection /> */}
         
@@ -24,7 +26,13 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+      <Link
+      href="/produts"
+      >
+        <button>Переглянути продукцію</button>
+      </Link>
       </main>
-    </Layout>
+      </>
+    // </Layout>
   );
 }
