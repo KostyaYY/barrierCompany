@@ -24,7 +24,7 @@ const Header = () => {
     <header className={styles.header}>
       <Link className={styles.logo} href="/">
         <Image
-          src="/images/logo.png"
+          src="/images/Logo.png"
           alt="Company logo"
           width={160}
           height={130}
@@ -45,34 +45,34 @@ const Header = () => {
       <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
         <Link
           href="#products"
-          className={styles.navLink}
+          className={styles.underline}
           onClick={(e) => {
             e.preventDefault();
             scrollToSection('products');
           }}
         >
-          Products
+          Товари
         </Link>
         <Link
           href="#contacts"
-          className={styles.navLink}
+          className={styles.underline}
           onClick={() => setIsMenuOpen(false)}
         >
-          Contacts
+          Контакти
         </Link>
         <Link
           href="#certificates"
-          className={styles.navLink}
+          className={styles.underline}
           onClick={() => setIsMenuOpen(false)}
         >
-          Certificates
+          Сертифікати
         </Link>
         <Link
           href="#they-trust-us"
-          className={styles.navLink}
+          className={styles.underline}
           onClick={() => setIsMenuOpen(false)}
         >
-          They trust us
+          Наші партнери
         </Link>
       </nav>
     </header>

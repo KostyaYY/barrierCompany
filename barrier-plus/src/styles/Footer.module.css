@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    padding: 20px 40px;
+    background-color: #C2B280;
+}
+.span {
+    margin-left: 10px;
+}
+.link {
+    margin-left: 10px;
+    transition: color 0.5s ease;
+}
+.link:hover {
+    color: #354B5E;
+    border-bottom: 1px solid #354B5E;
+}
+.link:focus {
+    color: #354B5E;
+    border-bottom: 1px solid #354B5E;
+}
