@@ -1,17 +1,15 @@
 // import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-// import Header from '../components/Header';
-// import Layout from '../components/Layout';
 // import ContactsSection from '../components/ContactsSection';
+// import AboutMeSection from '../components/AboutMeSection';
 
 export default function Home() {
   return (
-    // <Layout>
     <>
-      {/* <Header/> */}
       <main id="products" className={styles.main}>
         {/* <ContactsSection /> */}
+        {/* <AboutMeSection /> */}
         
         <div className={styles.ctas}>
         
@@ -33,6 +31,5 @@ export default function Home() {
       </Link>
       </main>
       </>
-    // </Layout>
   );
 }
