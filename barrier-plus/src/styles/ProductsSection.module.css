@@ -1,0 +1,22 @@
+
+.link {
+    background-color: transparent;
+}
+
+.btn {
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.text {
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    color: #E0E0E0;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 24px;
+  }
+}
