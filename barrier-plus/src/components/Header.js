@@ -1,19 +1,18 @@
 "use client";
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from '../styles/Header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false); 
+  const handleNavigate = (path) => {
+    setIsMenuOpen(false);
+    router.push(path);
   };
 
   const toggleMenu = () => {
@@ -22,14 +21,8 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Link className={styles.logo} href="/">
-        <Image
-          src="/images/Logo.png"
-          alt="Company logo"
-          width={160}
-          height={130}
-          priority
-        />
+      <Link href="/" className={styles.logo}>
+        <Image src="/images/Logo.png" alt="Company logo" width={160} height={130} priority />
       </Link>
 
       <button className={styles.burger} onClick={toggleMenu}>
@@ -43,37 +36,21 @@ const Header = () => {
       </button>
 
       <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
-        <Link
-          href="#products"
-          className={styles.underline}
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection('products');
-          }}
-        >
+        <button onClick={() => handleNavigate('/products')} className={styles.underline}>
           Товари
-        </Link>
-        <Link
-          href="#contacts"
-          className={styles.underline}
-          onClick={() => setIsMenuOpen(false)}
-        >
+        </button>
+        <button onClick={() => handleNavigate('/contacts')} className={styles.underline}>
           Контакти
-        </Link>
-        <Link
-          href="#certificates"
-          className={styles.underline}
-          onClick={() => setIsMenuOpen(false)}
-        >
+        </button>
+        <button onClick={() => handleNavigate('/about')} className={styles.underline}>
+          Про компанію
+        </button>
+        <button onClick={() => { scrollToSection('certificates'); setIsMenuOpen(false); }} className={styles.underline}>
           Сертифікати
-        </Link>
-        <Link
-          href="#they-trust-us"
-          className={styles.underline}
-          onClick={() => setIsMenuOpen(false)}
-        >
+        </button>
+        <button onClick={() => { scrollToSection('they-trust-us'); setIsMenuOpen(false); }} className={styles.underline}>
           Наші партнери
-        </Link>
+        </button>
       </nav>
     </header>
   );

@@ -1,9 +1,13 @@
+import Link from "next/link"
 import styles from '../styles/ContactsSection.module.css';
 
 const ContactsSection = () => {
   return (
-    <section className={styles.contactsSection}>
-      
+    <section >
+      <Link
+      className={styles.contactsSection}
+        href="/contacts"
+        >
       <div className={styles.contactsContainer}>
         <h2>OUR CONTACTS</h2>
         <div className={styles.contactBlock}>
@@ -56,6 +60,7 @@ const ContactsSection = () => {
           <button type="submit">Order</button>
         </form>
       </div>
+      </Link>
     </section>
   );
 };

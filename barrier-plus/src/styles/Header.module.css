@@ -28,6 +28,7 @@
   justify-content: center;
   flex-grow: 1;
 }
+
 .underline {
   position: relative;
   display: inline-block;
@@ -36,6 +37,8 @@
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 2px;
+  background: none;
+  border: none;
 }
 
 .underline::after {
@@ -97,7 +100,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: #C2B280;
     flex-direction: column;
     align-items: center;
     justify-content: center;

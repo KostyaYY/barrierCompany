@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import styles from "./page.module.css";
 // import ContactsSection from '../components/ContactsSection';
 // import AboutMeSection from '../components/AboutMeSection';
@@ -9,10 +9,9 @@ export default function Home() {
   return (
     <>
       <main id="products" className={styles.main}>
-        {/* <ContactsSection /> */}
         {/* <AboutMeSection /> */}
-       <ProductsSection />
-     
+        <ProductsSection />
+        {/* <ContactsSection /> */}
       </main>
       </>
   );
