@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 40px;
   background-color: #C2B280;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -17,10 +17,6 @@
   align-items: center;
 }
 
-.logo img {
-  width: 160px;
-  height: auto;
-}
 
 .nav {
   display: flex;

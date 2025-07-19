@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.logo}>
-        <Image src="/images/Logo.png" alt="Company logo" width={160} height={130} priority />
+        <Image src="/images/Logo.png" alt="Company logo" width={120} height={120} priority />
       </Link>
 
       <button className={styles.burger} onClick={toggleMenu}>

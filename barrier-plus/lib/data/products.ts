@@ -1,5 +1,4 @@
 
-
 export const products = [
   {
     id: '1',
@@ -16,7 +15,7 @@ export const products = [
   },
   {
     id: '2',
-    name: 'Єгоза - інженерна протипіхотна перешкода',
+    name: "Бар’єрний рубіж - 'Єгоза'",
     description:"Єгоза — це сучасний спіральний бар’єр із армованого сталевого дроту з лезами, призначений для швидкого створення фізичних загороджень у зоні бойових дій, на об'єктах оборонного або стратегічного значення.Використовується ЗСУ, ДСНС, прикордонною службою та іншими військовими формуваннями як елемент фортифікації, стримування і зонування. Основні переваги «Єгози» у військових умовах: 1. Миттєве встановлення; 2. Розгортається вручну або технікою без необхідності фундаменту; 3. Небезпечна для проникнення; 4. Леза з гострими краями забезпечують фізичне стримування супротивника; 5. Зупиняє як піхоту, так і техніку (у кілька рядів); 6. Можливість багаторазового використання; 7. Витримує навантаження, має антикорозійне покриття; 8. Компактна при транспортуванні; 9. Поставляється у згорнутому вигляді, займає мінімум місця",
     image: '../public/images/egoza.png',
     imageDescription1: '../public/images/egozaDescription1.png',
@@ -24,5 +23,36 @@ export const products = [
     imageDescription3: '../public/images/egozaDescription3.png',
     imageDescription4: '../public/images/egozaDescription4.png',
   },
+  {
+    id: '3',
+    name: "МПП Малопомітна перешкода",
+    description: "Малопомітна перешкода — це штучно створений інженерний елемент, призначений для уповільнення, зупинки або ускладнення руху супротивника. Не помітна з першого погляду (маскується або має непримітний вигляд), не видає себе під час наближення, може бути пасивною (наприклад, приховані загородження) або активною (наприклад, спрацьовує при наближенні).",
+    image: '../public/images/mpp.png',
+    imageDescription1: '../public/images/mppDescription1.png',
+    imageDescription2: '../public/images/mppDescription2.png',
+    imageDescription3: '../public/images/mppDescription3.png',
+    imageDescription4: '../public/images/mppDescription4.png',
+    imageDescription5: '../public/images/mppDescription5.png',
+    imageDescription6: '../public/images/mppDescription6.png',
+    imageDescription7: '../public/images/mppDescription7.png',
+    imageDescription8: '../public/images/mppDescription8.png',
+    imageDescription9: '../public/images/mppDescription9.png',
+  },
+    {
+    id: '4',
+    name: 'Сітка зварна "Армопояс"',
+    description: "Зварна, армуюча сітка з квадратним вічком, яка використовється для бетону, установки фундаменту, армування залізобетонних конструкцій. Це захист від деформації через несприятнлові фактори і навантаження. Переваги: готова до використання — не потрібно в’язати арматуру вручну, економить час при монтажі, забезпечує рівномірне армування армопояса, більш точна геометрія.",
+    image: '../public/images/sitkaArmopoyas.png',
+    imageDescription1: '../public/images/sitkaForFortifications.png',
+    imageDescription2: '../public/images/sitkaForFortifications2.png',
+  },
+  {
+    id: '5',
+    name: 'Трос металевий',
+    description: "Трос металевий — це гнучкий канат, сплетений із металевих дротів, що використовується для передачі зусилля, підйому вантажів, кріплення або натягу конструкцій.",
+    image: '../public/images/tros.png',
+    imageDescription1: '../public/images/TrosDescription1.png',
+    imageDescription2: '../public/images/TrosDescription2.png',
+  }
   
 ];
