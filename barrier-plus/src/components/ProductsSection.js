@@ -6,11 +6,11 @@ const ProductsSection = () => {
     return (
         <section className={styles.section}>
        
-        <h2
+        <h1
         className={styles.title}
         >
           Якісна продукція оборонного призначення
-          </h2>
+          </h1>
           <ul className={styles.list}>
             <li className={styles.item}>
               <Image 
@@ -40,8 +40,9 @@ const ProductsSection = () => {
               />
             </li>
           </ul>
-        <Link href="/products" className={styles.wrapper}>
+        <div className={styles.boxLink}>
         <button className={styles.btn}>
+          <Link href="/products" className={styles.wrapper}>
             <p className={styles.text}>
               Переглянути продукцію
             </p>
@@ -52,8 +53,9 @@ const ProductsSection = () => {
             height={45}
             className={styles.bullet}
             />
+            </Link>
         </button>
-      </Link>
+        </div>
         </section>
     )
 }

@@ -1,19 +1,30 @@
-/* .section {
-  text-align: center;
-} */
+
+.boxLink {
+  display: flex;
+  justify-content: center;
+  
+} 
 .wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
 .btn {
     display: flex;
-    align-items: center;
     padding: 12px 18px;
     border: 1px solid #E0E0E0;
     border-radius: 16px;
     cursor: pointer;
     background-color: transparent;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+  scale: 1.05
+}
+.btn:focus {
+  scale: 1.05
 }
 .title {
     text-align: center;

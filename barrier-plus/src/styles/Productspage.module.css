@@ -1,0 +1,11 @@
+.wrapper {
+    padding: 40px 20px;
+    background-image: url("../../public/images/MetallWall.png");
+}
+.title {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    margin-bottom: 48px;
+    color: #E0E0E0;
+}
