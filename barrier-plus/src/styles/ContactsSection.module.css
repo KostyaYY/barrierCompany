@@ -1,10 +1,12 @@
 .contactsSection {
+  display: flex;
+  min-height: 80vh;
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
-    background-image: url("../../public/images/MetallWall.png");
+  background-image: url("../../public/images/MetallWall.png");
 }
 
 .contactsContainer {

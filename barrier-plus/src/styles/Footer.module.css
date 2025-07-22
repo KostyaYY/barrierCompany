@@ -1,7 +1,7 @@
 .footer {
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    justify-content: space-between;
+    align-items: flex-end; 
     color: #333;
     margin-top: auto;
     padding: 20px 40px;
@@ -21,4 +21,9 @@
 .link:focus {
     color: #354B5E;
     border-bottom: 1px solid #354B5E;
+}
+
+.company {
+     display: flex;
+     gap: 20
 }

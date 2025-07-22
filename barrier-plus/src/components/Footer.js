@@ -1,11 +1,23 @@
 import Link from 'next/link';
 import styles from '../styles/Footer.module.css'; 
+import Image from 'next/image';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <div  className={styles.company}>
+        <Image src="/images/Logo.png" alt="Company logo" width={80} height={80} priority />
+        <div className={styles.contactsContainer}>
+        <h3>© 2025 ТОВ `Barrier Plus`. Всі права захищено.</h3>
+        <div className={styles.contactBlock}>
+          <p>Телефон: <a href="tel:+380734220391">+38 0 (98) 955 04 64</a></p>
+          <p>Електронна пошта: <a href="mailto:barrierplusukraine@gmail.com">barrierplusukraine@gmail.com</a></p>
+          <p>Адрес: Київ, бульвар Вацлава Гавела, буд 8, корпус 9</p>
+        </div>
+      </div>
+      </div>
      <div>
-        <span>© 2023 All rights reserved Developed a project:{' '}</span>
+        <span>© 2025 All rights reserved Developed a project:{' '}</span>
         <Link
           className={styles.link}
           href="https://github.com/Aleksey0808"
