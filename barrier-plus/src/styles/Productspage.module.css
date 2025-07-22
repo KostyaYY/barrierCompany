@@ -1,6 +1,8 @@
 .wrapper {
     padding: 40px 20px;
     background-image: url("../../public/images/MetallWall.png");
+    object-fit: cover;
+    background-size: cover;
 }
 .title {
     text-align: center;

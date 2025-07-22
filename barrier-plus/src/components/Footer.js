@@ -8,11 +8,11 @@ const Footer = () => {
       <div  className={styles.company}>
         <Image src="/images/Logo.png" alt="Company logo" width={80} height={80} priority />
         <div className={styles.contactsContainer}>
-        <h3>© 2025 ТОВ `Barrier Plus`. Всі права захищено.</h3>
+        <h3>© 2025 ТОВ `Бар`єр Плюс`. Всі права захищено.</h3>
         <div className={styles.contactBlock}>
           <p>Телефон: <a href="tel:+380734220391">+38 0 (98) 955 04 64</a></p>
           <p>Електронна пошта: <a href="mailto:barrierplusukraine@gmail.com">barrierplusukraine@gmail.com</a></p>
-          <p>Адрес: Київ, бульвар Вацлава Гавела, буд 8, корпус 9</p>
+          <p>Адреса: Київ, бульвар Вацлава Гавела, буд 8, корпус 9</p>
         </div>
       </div>
       </div>

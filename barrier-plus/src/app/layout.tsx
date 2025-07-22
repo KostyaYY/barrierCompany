@@ -29,10 +29,8 @@ export default function RootLayout({
     <html lang="uk">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header/>
-        <main>
           {children}
           <ScrollToTopButton />
-        </main>
         <Footer/>
       </body>
     </html>

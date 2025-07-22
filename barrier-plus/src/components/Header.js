@@ -39,17 +39,14 @@ const Header = () => {
         <button onClick={() => handleNavigate('/products')} className={styles.underline}>
           Товари
         </button>
-        <button onClick={() => handleNavigate('/contacts')} className={styles.underline}>
-          Контакти
-        </button>
         <button onClick={() => handleNavigate('/about')} className={styles.underline}>
           Про компанію
         </button>
-        <button onClick={() => { scrollToSection('certificates'); setIsMenuOpen(false); }} className={styles.underline}>
-          Сертифікати
-        </button>
-        <button onClick={() => { scrollToSection('they-trust-us'); setIsMenuOpen(false); }} className={styles.underline}>
+        <button onClick={() =>  handleNavigate('/partners')} className={styles.underline}>
           Наші партнери
+        </button>
+        <button onClick={() => handleNavigate('/contacts')} className={styles.underline}>
+          Контакти
         </button>
       </nav>
     </header>

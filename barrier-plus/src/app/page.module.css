@@ -6,6 +6,7 @@
   grid-row-start: 2;
   padding: 40px 40px;
   background-image: url("../../public/images/mainBack.png");
+  min-height: 100vh;
 }
 
 

@@ -1,0 +1,44 @@
+.partnersSection {
+  background-image: url("../../public/images/MetallWall.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 38px;
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+
+.partnersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  /* display: flex;
+  align-items: center; */
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
