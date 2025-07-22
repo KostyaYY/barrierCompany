@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
+    background-image: url("../../public/images/MetallWall.png");
 }
 
 .contactsContainer {

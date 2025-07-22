@@ -2,6 +2,7 @@
   width: 100%;
   /* background: linear-gradient(135deg, #1e293b, #0f172a); */
   color: white;
+  background-image: url("../../public/images/MetallWall.png");
   padding: 80px 20px;
 }
 
@@ -49,28 +50,28 @@
 
 .image1 {
   position: absolute;
-  top: 240;
+  top: 180;
   right: 20;
   border-radius: 20;
 }
 
 .image2 {
   position: absolute;
-  top: 480;
+  top: 400;
   left: 20;
   border-radius: 20;
 }
 
 .image3 {
   position: absolute;
-  top: 780;
+  top: 680;
   right: 20;
   border-radius: 20;
 }
 
 .image4 {
   position: absolute;
-  top: 1000;
+  top: 900;
   left: 20;
   border-radius: 20;
 }
