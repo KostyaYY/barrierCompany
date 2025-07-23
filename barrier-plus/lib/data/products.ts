@@ -4,75 +4,90 @@ export const products = [
     id: '1',
     name: 'Габіони',
     description: 'Габіони — це модульні сітчасті конструкції, заповнені каменем або щебенем, які застосовуються для швидкого зведення захисних укріплень в умовах бойових дій. Вони є незамінним елементом сучасної інженерної оборони, забезпечуючи ефективний захист особового складу, техніки та ключових обєктів. Основні переваги габіонів у військовому застосуванні: 1. Поглинають вибухову хвилю та уламки; 2. Завдяки масивності та структурі знижують ризик поранень і руйнувань,; 3. Швидкий монтаж у польових умовах; 4. Монтуються без спеціальної техніки, на місці за кілька годин; 5. Модульна система, легко комбінуються в стіни, перешкоди, бліндажі, вогневі точки; 6. Маскування та природний вигляд, заповнення природними матеріалами зменшує візуальну помітність; 7. Міцна антикорозійна сітка, яка виготовлена зі сталевого дроту з цинковим або гальфановим покриттям. Застосування на передовій: побудова фортифікаційних споруд (вогневих позицій, опорних пунктів),захист від обстрілів — осколки, стрілецька зброя, детонація, укріплення периметра польових баз, протитанкові та протипіхотні перешкоди, розмежування та направлення потоку техніки. Комплекти постачаються у складеному вигляді, що спрощує логістику та розгортання на позиціях.',
-    image: '../public/images/gabion.png',
-    imageDescription: '../public/images/gabionDescription.png',
-    imageDescription2: '../public/images/gabionDescription2.png',
-    imageDescription3: '../public/images/gabionDescription3.png',
-    imageDescription4: '../public/images/gabionDescription4.png',
-    imageDescription5: '../public/images/gabionDescription5.png',
-    imageDescription6: '../public/images/gabionDescription6.png',
-    imageDescription7: '../public/images/gabionDescription7.png',
+    image: '/images/gabion.png',
+    gallery: [
+      '/images/gabionDescription.png',
+      '/images/gabionDescription2.png',
+      '/images/gabionDescription3.png',
+      '/images/gabionDescription4.png',
+      '/images/gabionDescription5.png',
+      '/images/gabionDescription6.png',
+      '/images/gabionDescription7.png',
+    ],
   },
   {
     id: '2',
     name: 'Бар’єрний рубіж - "Єгоза"',
     description:"Єгоза — це сучасний спіральний бар’єр із армованого сталевого дроту з лезами, призначений для швидкого створення фізичних загороджень у зоні бойових дій, на об'єктах оборонного або стратегічного значення.Використовується ЗСУ, ДСНС, прикордонною службою та іншими військовими формуваннями як елемент фортифікації, стримування і зонування. Основні переваги «Єгози» у військових умовах: 1. Миттєве встановлення; 2. Розгортається вручну або технікою без необхідності фундаменту; 3. Небезпечна для проникнення; 4. Леза з гострими краями забезпечують фізичне стримування супротивника; 5. Зупиняє як піхоту, так і техніку (у кілька рядів); 6. Можливість багаторазового використання; 7. Витримує навантаження, має антикорозійне покриття; 8. Компактна при транспортуванні; 9. Поставляється у згорнутому вигляді, займає мінімум місця",
-    image: '../public/images/egoza.png',
-    imageDescription1: '../public/images/egozaDescription1.png',
-    imageDescription2: '../public/images/egozaDescription2.png',
-    imageDescription3: '../public/images/egozaDescription3.png',
-    imageDescription4: '../public/images/egozaDescription4.png',
+    image: '/images/egoza.png',
+    gallery: [
+    '/images/egozaDescription1.png',
+    '/images/egozaDescription2.png',
+    '/images/egozaDescription3.png',
+    '/images/egozaDescription4.png',
+],
+
   },
   {
     id: '3',
     name: "МПП Малопомітна перешкода",
     description: "Малопомітна перешкода — це штучно створений інженерний елемент, призначений для уповільнення, зупинки або ускладнення руху супротивника. Не помітна з першого погляду (маскується або має непримітний вигляд), не видає себе під час наближення, може бути пасивною (наприклад, приховані загородження) або активною (наприклад, спрацьовує при наближенні).",
-    image: '../public/images/mpp.png',
-    imageDescription1: '../public/images/mppDescription1.png',
-    imageDescription2: '../public/images/mppDescription2.png',
-    imageDescription3: '../public/images/mppDescription3.png',
-    imageDescription4: '../public/images/mppDescription4.png',
-    imageDescription5: '../public/images/mppDescription5.png',
-    imageDescription6: '../public/images/mppDescription6.png',
-    imageDescription7: '../public/images/mppDescription7.png',
-    imageDescription8: '../public/images/mppDescription8.png',
-    imageDescription9: '../public/images/mppDescription9.png',
+    image: '/images/mpp.png',
+    gallery: [
+    '/images/mppDescription1.png',
+    '/images/mppDescription2.png',
+    '/images/mppDescription3.png',
+    '/images/mppDescription4.png',
+    '/images/mppDescription5.png',
+    '/images/mppDescription6.png',
+    '/images/mppDescription7.png',
+    '/images/mppDescription8.png',
+    '/images/mppDescription9.png',
+      ]
   },
     {
     id: '4',
     name: 'Сітка зварна "Армопояс"',
     description: "Зварна, армуюча сітка з квадратним вічком, яка використовється для бетону, установки фундаменту, армування залізобетонних конструкцій. Це захист від деформації через несприятнлові фактори і навантаження. Переваги: готова до використання — не потрібно в’язати арматуру вручну, економить час при монтажі, забезпечує рівномірне армування армопояса, більш точна геометрія.",
-    image: '../public/images/sitkaArmopoyas.png',
-    imageDescription1: '../public/images/sitkaForFortifications.png',
-    imageDescription2: '../public/images/sitkaForFortifications2.png',
+    image: '/images/sitkaArmorpoyas.png',
+    gallery: [
+      '/images/sitkaForFortifications.png',
+      '/images/sitkaForFortifications2.png',
+    ]
   },
   {
     id: '5',
     name: 'Трос металевий',
     description: "Трос металевий — це гнучкий канат, сплетений із металевих дротів, що використовується для передачі зусилля, підйому вантажів, кріплення або натягу конструкцій.",
-    image: '../public/images/tros.png',
-    imageDescription1: '../public/images/TrosDescription1.png',
-    imageDescription2: '../public/images/TrosDescription2.png'
+    image: '/images/tros.png',
+    gallery: [
+    '/images/TrosDescription1.png',
+    '/images/TrosDescription2.png'
+    ]
   },
    {
     id: '6',
     name: 'Піраміда загороджувальна ПЗ-1 "Зуб дракона"',
     description: "“Зуби дракона” — це протитанкові загородження, які зазвичай складаються з бетонних пірамід або конусів, встановлених у кілька рядів. Їх головна мета — уповільнити або зупинити рух бронетехніки, особливо танків. Основні характеристики: виготовляються з залізобетону, можуть встановлюватися на відкритій місцевості (перед оборонними лініями або на підходах до важливих об’єктів), часто доповнюються іншими інженерними загородженнями (міни, рови, дротяні загородження тощо).",
-    image: '../public/images/dragontooth.png',
-    imageDescription1: '../public/images/dragonToothDescription1.png',
-    imageDescription2: '../public/images/dragonToothDescription2.png',
-    imageDescription3: '../public/images/dragonToothDescription3.png',
-    imageDescription4: '../public/images/dragonToothDescription4.png'
+    image: '/images/dragontooth.png',
+    gallery: [
+    '/images/dragonToothDescription1.png',
+    '/images/dragonToothDescription2.png',
+    '/images/dragonToothDescription3.png',
+    '/images/dragonToothDescription4.png'
+    ]
   },
   {
     id: '7',
     name: 'Протикумулятивна решітка на фортифікаційну споруду',
     description: "Протикумулятивна решітка на фортифікаційну споруду — це елемент захисту, призначений для нейтралізації або зменшення ефективності кумулятивних боєприпасів (гранатометних пострілів, ПТУР тощо), які можуть бути застосовані по укріпленнях, бліндажах, блокпостах або техніці. Це металева конструкція у вигляді сітки, решітки або рамок, яка розміщується на відстані від основної захищуваної поверхні. Її мета — спричинити передчасну детонацію кумулятивного заряду на відстані, не давши струменю пробити основну броню чи стіну.",
-    image: '../public/images/reshitkaForConstractions2.png',
-    imageDescription1: '../public/images/reshitkaForConstractions1.png',
-    imageDescription2: '../public/images/reshitkaForConstractions1-1.png',
-    imageDescription3: '../public/images/reshitkaForConstractions2-2.png',
-    imageDescription4: '../public/images/reshitkaForConstractions3.png',
-    imageDescription5: '../public/images/reshitkaForConstractions3-3.png'
+    image: '/images/reshitkaForConstractions2.png',
+    gallery: [
+    '/images/reshitkaForConstractions1.png',
+    '/images/reshitkaForConstractions1-1.png',
+    '/images/reshitkaForConstractions2-2.png',
+    '/images/reshitkaForConstractions3.png',
+    '/images/reshitkaForConstractions3-3.png'
+    ]
   }
 ];
