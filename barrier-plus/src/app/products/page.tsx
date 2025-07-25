@@ -7,7 +7,7 @@ import { products } from "../../../lib/data/products";
 const ProductsPage = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Наша продукція</h2>
+      <h2 className={styles.title}>Перелік продукції</h2>
       <div className={styles.grid}>
         {products.map((product) => (
           <Link key={product.id} href={`/products/${product.id}`} className={styles.card}>

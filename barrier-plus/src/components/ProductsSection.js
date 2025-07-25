@@ -16,8 +16,8 @@ const ProductsSection = () => {
               <Image 
               src="/images/egoza.png" 
               alt="Єгоза" 
-              width={200} 
-              height={200}
+              width={240} 
+              height={240}
               className={styles.imageProduct}
               />
               </li>
@@ -25,8 +25,8 @@ const ProductsSection = () => {
               <Image 
               src="/images/gabion.png" 
               alt="Єгоза" 
-              width={200} 
-              height={200}
+              width={240} 
+              height={240}
               className={styles.imageProduct}
               />
             </li>
@@ -34,8 +34,17 @@ const ProductsSection = () => {
               <Image 
               src="/images/mpp.png" 
               alt="Єгоза" 
-              width={200} 
-              height={200}
+              width={240} 
+              height={240}
+              className={styles.imageProduct}
+              />
+            </li>
+            <li className={styles.item}>
+              <Image 
+              src="/images/acumulyativnaReshitka.png" 
+              alt="Єгоза" 
+              width={240} 
+              height={240}
               className={styles.imageProduct}
               />
             </li>

@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { products } from "../../../../lib/data/products";
+import { BackButton } from "@/components/BackBtn";
 import Image from "next/image";
 import styles from "../../../styles/ProductDetailPage.module.css";
 
@@ -33,7 +34,8 @@ const ProductDetailPage = ({ params }: Props) => {
 
   return (
     <div className={styles.container}>
-      <h1>{product.name}</h1>
+      <BackButton/>
+      <h2 className={styles.title}>{product.name}</h2>
 
       {gallery.length > 0 && (
         <div className={styles.sliderWrapper}>

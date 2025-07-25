@@ -21,7 +21,7 @@
 .nav {
   display: flex;
   gap: 24px;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-grow: 1;
 }
 

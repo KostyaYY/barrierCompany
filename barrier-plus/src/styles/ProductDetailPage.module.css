@@ -6,12 +6,21 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #E0E0E0;
+}
 
 .description {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: justify;
+  text-indent: 2em;
   margin-top: 30px;
+  color: #E0E0E0;
 }
 
 .sliderWrapper {
@@ -33,11 +42,32 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: #333;
-  transition: transform 0.2s ease;
+  color: #E0E0E0;
+  transition: all 0.2s ease;
 }
 
 .arrow:hover {
   transform: scale(1.2);
-  color: #000;
+  color: #C2B280;
+}
+
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .description {
+  font-size: 0.9rem;
+}
+.sliderImage {
+  width: 450px;
+  height: 250px;
+}
+.arrow {
+  font-size: 1.5rem;
+}
+.sliderWrapper {
+  gap: 4px;
+}  
 }
