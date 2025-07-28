@@ -8,7 +8,7 @@ import ProductsSection from "../components/ProductsSection";
 export default function Home() {
   return (
     <>
-      <main id="products" className={styles.main}>
+      <main id="products" aria-label="Продукція оборонного призначення" className={styles.main}>
         {/* <AboutMeSection /> */}
         <ProductsSection />
         {/* <ContactsSection /> */}

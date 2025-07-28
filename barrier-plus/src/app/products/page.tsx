@@ -7,7 +7,7 @@ import { products } from "../../../lib/data/products";
 const ProductsPage = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Перелік продукції</h2>
+      <h2 className={styles.title} aria-label="Товари оборонного призначення">Перелік продукції</h2>
       <div className={styles.grid}>
         {products.map((product) => (
           <Link key={product.id} href={`/products/${product.id}`} className={styles.card}>
@@ -17,8 +17,9 @@ const ProductsPage = () => {
               width={300}
               height={200}
               className={styles.image}
+              aria-label={product.name}
             />
-            <h3 className={styles.textName}>{product.name}</h3>
+            <h3 className={styles.textName} aria-label={product.name}>{product.name}</h3>
           </Link>
         ))}
       </div>

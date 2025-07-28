@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer aria-label="товари оборонного призначення" className={styles.footer}>
       <div  className={styles.company}>
-        <Image src="/images/Logo.png" alt="Company logo" width={80} height={80} priority />
+        <Image src="/images/Logo.png" alt="Логотип компанії" aria-label="Бар'єр плюс" width={80} height={80} priority />
         <div className={styles.contactsContainer}>
         <h3>© 2025 ТОВ `Бар`єр Плюс`. Всі права захищено.</h3>
         <div className={styles.contactBlock}>

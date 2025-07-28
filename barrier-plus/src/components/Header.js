@@ -20,9 +20,9 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header aria-label="товари оборонного призначення" className={styles.header}>
       <Link href="/" className={styles.logo}>
-        <Image src="/images/Logo.png" alt="Company logo" width={120} height={120} priority />
+        <Image src="/images/Logo.png" alt="Логотип компанії" aria-label="Бар'єр плюс" width={120} height={120} priority />
       </Link>
 
       <button className={styles.burger} onClick={toggleMenu}>
@@ -35,17 +35,17 @@ const Header = () => {
         />
       </button>
 
-      <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
-        <button onClick={() => handleNavigate('/products')} className={styles.underline}>
+      <nav aria-label="Пошук товарів оборонного призначення" className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
+        <button aria-label="перелік товарів" onClick={() => handleNavigate('/products')} className={styles.underline}>
           Товари
         </button>
-        <button onClick={() => handleNavigate('/about')} className={styles.underline}>
+        <button aria-label="про компанію Бар'єр плюс" onClick={() => handleNavigate('/about')} className={styles.underline}>
           Про компанію
         </button>
-        <button onClick={() =>  handleNavigate('/partners')} className={styles.underline}>
+        <button aria-label="метало прокат" onClick={() =>  handleNavigate('/partners')} className={styles.underline}>
           Наші партнери
         </button>
-        <button onClick={() => handleNavigate('/contacts')} className={styles.underline}>
+        <button aria-label="телефон та електронна пошта" onClick={() => handleNavigate('/contacts')} className={styles.underline}>
           Контакти
         </button>
       </nav>
