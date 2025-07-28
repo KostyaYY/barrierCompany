@@ -58,6 +58,7 @@ const ProductDetailPage = ({ params }: Props) => {
       )}
 
       <p className={styles.description}>{product.description}</p>
+      <p className={styles.complects}>{product.complectText}</p>
     </div>
   );
 };

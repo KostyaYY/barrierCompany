@@ -3,11 +3,7 @@ import styles from '../styles/ContactsSection.module.css';
 
 const ContactsSection = () => {
   return (
-    <section >
-      <Link
-      className={styles.contactsSection}
-        href="/contacts"
-        >
+    <section className={styles.contactsSection}>
       <div className={styles.contactsContainer}>
         <h2>НАШІ КОНТАКТИ</h2>
         <div className={styles.contactBlock}>
@@ -47,7 +43,6 @@ const ContactsSection = () => {
           <button type="submit">Замовлення</button>
         </form>
       </div>
-      </Link>
     </section>
   );
 };
