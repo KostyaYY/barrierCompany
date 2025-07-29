@@ -2,17 +2,19 @@
 "use client";
 
 import { useState } from "react";
+import { use } from "react";
 import { products } from "../../../../lib/data/products";
 import { BackButton } from "@/components/BackBtn";
 import Image from "next/image";
 import styles from "../../../styles/ProductDetailPage.module.css";
 
 interface Props {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 const ProductDetailPage = ({ params }: Props) => {
-  const product = products.find((p) => p.id === params.id);
+  const {id} = use(params);
+  const product = products.find((p) => p.id === id);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
