@@ -15,38 +15,38 @@ const ProductsSection = () => {
           <ul className={styles.list}>
             <li className={styles.item}>
               <Image 
-              src="/images/egoza.png" 
-              alt="Єгоза" 
+              src="/home/gabion.png" 
+              alt="gabion" 
               width={240} 
               height={240}
               className={styles.imageProduct}
-              aria-label="Єгоза"
+              aria-label="gabion"
               />
               </li>
             <li className={styles.item}>
               <Image 
-              src="/images/gabion.png" 
-              alt="Єгоза" 
+              src="/home/piramida.png" 
+              alt="piramida" 
               width={240} 
               height={240}
               className={styles.imageProduct}
-              aria-label="Габіон"
+              aria-label="piramida"
               />
             </li>
             <li className={styles.item}>
               <Image 
-              src="/images/mpp.png" 
-              alt="МПП" 
+              src="/home/setka.png" 
+              alt="setka" 
               width={240} 
               height={240}
               className={styles.imageProduct}
-              aria-label="Малопомітна піхотна перешкода"
+              aria-label="setka"
               />
             </li>
             <li className={styles.item}>
               <Image 
-              src="/images/acumulyativnaReshitka.png" 
-              alt="Решітка" 
+              src="/home/tros.png" 
+              alt="tros" 
               width={240} 
               height={240}
               className={styles.imageProduct}
