@@ -1,29 +1,143 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; 
-    color: #333;
-    margin-top: auto;
-    padding: 20px 40px;
-    background-color: #C2B280;
-}
-.span {
-    margin-left: 10px;
-}
-.link {
-    margin-left: 10px;
-    transition: color 0.5s ease;
-}
-.link:hover {
-    color: #354B5E;
-    border-bottom: 1px solid #354B5E;
-}
-.link:focus {
-    color: #354B5E;
-    border-bottom: 1px solid #354B5E;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #333;
+  margin-top: auto;
+  padding: 20px 40px;
+  background-color: #C2B280;
 }
 
 .company {
-     display: flex;
-     gap: 20
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contactsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactsContainer h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactBlock p {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+.contactBlock a {
+  /* color: #0070f3; */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactBlock a:hover,
+.contactBlock a:focus {
+  color: #354B5E;
+  text-decoration: underline;
+}
+
+.span {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.link {
+  margin-left: 10px;
+  font-size: 16px;
+  /* color: #0070f3; */
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.link:hover,
+.link:focus {
+  color: #354B5E;
+  border-bottom: 1px solid #354B5E;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 15px 30px;
+  }
+
+  .company {
+    gap: 15px;
+  }
+
+  .contactsContainer h3 {
+    font-size: 16px;
+  }
+
+  .contactBlock p,
+  .contactBlock a,
+  .span,
+  .link {
+    font-size: 14px;
+  }
+
+  .company img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 20px;
+    gap: 20px;
+  }
+
+  .company {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contactsContainer {
+    align-items: center;
+  }
+
+  .contactsContainer h3 {
+    font-size: 16px;
+  }
+
+  .contactBlock {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contactBlock p,
+  .contactBlock a {
+    font-size: 16px;
+  }
+
+  .span,
+  .link {
+    margin-left: 0;
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .company img {
+    width: 50px;
+    height: 50px;
+  }
 }

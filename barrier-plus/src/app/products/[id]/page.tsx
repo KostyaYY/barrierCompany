@@ -1,7 +1,6 @@
 // app/products/[id]/page.tsx
 "use client";
 
-import { useState } from "react";
 import { use } from "react";
 import { products } from "../../../../lib/data/products";
 import { BackButton } from "@/components/BackBtn";
@@ -13,49 +12,30 @@ interface Props {
 }
 
 const ProductDetailPage = ({ params }: Props) => {
-  const {id} = use(params);
+  const { id } = use(params);
   const product = products.find((p) => p.id === id);
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   if (!product) return <div>Продукт не знайдено</div>;
 
   const gallery = product.gallery || [];
 
-  const nextImage = () => {
-    setCurrentImageIndex((prev) =>
-      prev === gallery.length - 1 ? 0 : prev + 1
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) =>
-      prev === 0 ? gallery.length - 1 : prev - 1
-    );
-  };
-
   return (
     <div className={styles.container}>
-      <BackButton/>
+      <BackButton />
       <h2 className={styles.title}>{product.name}</h2>
 
       {gallery.length > 0 && (
-        <div className={styles.sliderWrapper}>
-          <button className={styles.arrow} onClick={prevImage}>
-            ◀
-          </button>
-
-          <Image
-            src={gallery[currentImageIndex]}
-            alt={`Фото ${currentImageIndex + 1}`}
-            width={600}
-            height={400}
-            className={styles.sliderImage}
-          />
-
-          <button className={styles.arrow} onClick={nextImage}>
-            ▶
-          </button>
+        <div className={styles.galleryGrid}>
+          {gallery.map((img, index) => (
+            <Image
+              key={index}
+              src={img}
+              alt={`Фото ${index + 1}`}
+              width={300}
+              height={200}
+              className={styles.galleryImage}
+            />
+          ))}
         </div>
       )}
 
