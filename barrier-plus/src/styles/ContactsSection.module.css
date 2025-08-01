@@ -7,9 +7,9 @@
   gap: 40px;
   justify-content: space-between;
   color: #E0E0E0;
-  background-image: url("../../public/images/MetallWall.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url("../../public/images/MetallWall.png"); */
+  /* background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 .contactsContainer {
