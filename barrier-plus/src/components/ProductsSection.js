@@ -5,14 +5,14 @@ import Image from "next/image";
 const ProductsSection = () => {
     return (
         <section aria-label="український перелік продукції оборонного призначення" className={styles.section}>
-       
         <h1
         aria-label="Якісна продукція"
         className={styles.title}
         >
-          Якісна продукція оборонного призначення
+          Надійна та якісна продукція оборонного призначення
           </h1>
-          <ul className={styles.list}>
+          <p className={styles.textAfter}>Від міцного металу до непохитної оборони – будуємо безпеку разом!</p>
+          {/* <ul className={styles.list}>
             <li className={styles.item}>
               <Image 
               src="/home/gabion.png" 
@@ -53,12 +53,12 @@ const ProductsSection = () => {
               aria-label="Решітка"
               />
             </li>
-          </ul>
+          </ul> */}
         <div className={styles.boxLink}>
         <button className={styles.btn}>
           <Link href="/products" className={styles.wrapper} aria-label="Товари">
             <p className={styles.text}>
-              Переглянути продукцію
+              Каталог товарів
             </p>
             <Image
              src="/images/bullet.png"

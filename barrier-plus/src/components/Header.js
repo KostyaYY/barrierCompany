@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import styles from '../styles/Header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from '../../public/images/logo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
   return (
     <header aria-label="товари оборонного призначення" className={styles.header}>
       <Link href="/" className={styles.logo}>
-        <Image src="/images/Logo.png" alt="Логотип компанії" aria-label="Бар'єр плюс" width={120} height={120} priority />
+        <Image src={Logo} alt="Логотип компанії" aria-label="Бар'єр плюс" width={120} height={120} priority />
       </Link>
 
       <button className={styles.burger} onClick={toggleMenu}>

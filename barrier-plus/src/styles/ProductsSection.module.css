@@ -1,7 +1,17 @@
-
+.section {
+  padding: 60px 40px;
+  background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.6),
+          rgba(2, 0, 0, 0.6)
+        ),
+        url("../../public/images/main.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .boxLink {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   
 } 
 .boxLink:hover {
@@ -16,8 +26,8 @@
 
 .btn {
     display: flex;
-    padding: 12px 18px;
-    border: 1px solid #E0E0E0;
+    padding: 6px 32px;
+    border: 2px solid #E0E0E0;
     border-radius: 16px;
     cursor: pointer;
     background-color: transparent;
@@ -26,21 +36,30 @@
 .btn:hover {
   scale: 1.05;
   border-color: #C2B280;
+  color:#C2B280;
 }
 .btn:focus {
   scale: 1.05;
   border-color: #C2B280;
+  color:#C2B280;
 }
 .title {
-    text-align: center;
+    /* text-align: center; */
     font-weight: 900;
     font-size: 32px;
     letter-spacing: 0.1em;
-    margin-bottom: 48px;
+    margin: 0;
+    margin-bottom: 12px;
     color: #E0E0E0;
 }
+.textAfter {
+  color: #E0E0E0;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
 .text {
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 0.02em;
   color: #E0E0E0;
   transition: color 0.2s ease;

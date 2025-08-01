@@ -3,7 +3,7 @@
 .container {
   padding: 40px;
   text-align: center;
-	background-image: url("../../public/images/MetallWall.png");
+	/* background-image: url("../../public/images/MetallWall.png"); */
 	object-fit: cover;
 	background-size: cover; 
 }
