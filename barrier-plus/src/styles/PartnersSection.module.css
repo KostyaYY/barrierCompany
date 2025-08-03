@@ -1,16 +1,15 @@
 .partnersSection {
-  /* background-image: url("../../public/images/MetallWall.png"); */
-  /* background-size: cover;
-  background-repeat: no-repeat; */
   background-position: center;
-  padding: 80px 20px;
+  padding: 40px 40px;
   min-height: 100vh;
   text-align: center;
-  color: #fff;
+  color: #000;
+  border-top: 2px solid #000;
 }
 
 .title {
   font-size: 38px;
+  margin-top: 0;
   margin-bottom: 40px;
   font-weight: 900;
 }
@@ -18,15 +17,14 @@
 .partnersGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 30px;
+  column-gap: 80px;
+  row-gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .card {
-  /* display: flex;
-  align-items: center; */
-  background: rgba(255, 255, 255, 0.6);
+  background-color: #C2B280;
   padding: 20px;
   border-radius: 12px;
   transition: transform 0.3s ease;

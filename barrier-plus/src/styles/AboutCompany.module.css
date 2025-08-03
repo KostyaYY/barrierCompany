@@ -1,0 +1,48 @@
+.section {
+    padding: 40px 40px;
+}
+.title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.list {
+    margin: 0;
+    margin-bottom: 18px;
+    list-style:disc;
+}
+.preText {
+    font-weight: 700;
+}
+
+.buttonList {
+    display: flex;
+    column-gap: 32px;
+    margin: 0;
+}
+
+.btn {
+    display: flex;
+    padding: 0 32px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #C2B280;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+  scale: 1.05;
+  color: #E0E0E0;
+  background-color: #354B5E;
+}
+.btn:focus {
+  scale: 1.05;
+  color: #E0E0E0;
+ background-color: #354B5E;
+}
+.btnText {
+    font-size: 16px;
+    font-weight: 700;
+}

@@ -6,10 +6,10 @@ import Image from "next/image";
 const partners = [
   { name: "АрселорМіттал", img: "/images/partners/arcelor.png" },
   { name: "Дніпросталь", img: "/images/partners/dniprostal.png" },
-  { name: "Державна прикордона служба Укараїни", img: "/images/partners/dpsu.png" },
+  { name: "Державна прикордонна служба України", img: "/images/partners/dpsu.png" },
   { name: "Метинве́ст", img: "/images/partners/metinvest.png" },
   { name: "Міністерство оборони України", img: "/images/partners/mou.png" },
-  { name: "Национальная гвардия Украины", img: "/images/partners/ngu.png" },
+  { name: "Національна гвардія України", img: "/images/partners/ngu.png" },
   { name: "Запоріжсталь", img: "/images/partners/zaporizhstal.png" },
 ];
 
