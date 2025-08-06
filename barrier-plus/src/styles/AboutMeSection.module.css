@@ -1,7 +1,7 @@
 .AboutMeSection {
   width: 100%;
   /* background: linear-gradient(135deg, #1e293b, #0f172a); */
-  color: white;
+  /*color: white;
   /* background-image: url("../../public/images/MetallWall.png"); */
   padding: 80px 20px;
 }
@@ -30,6 +30,7 @@
 .subtitle {
   font-size: 24px;
   line-height: 1.6;
+  text-indent: 3rem;
   margin-bottom: 30px;
   font-weight: 700;
 }

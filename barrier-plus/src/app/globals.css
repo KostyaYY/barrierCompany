@@ -1,6 +1,6 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --text: #354B5E;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +18,7 @@ body {
 
 body {
   margin: 0;
-  color: var(--foreground);
+  color: var(--text);
   background: var(--background);
   font-family: Roboto, Raleway, sans-serif;
   display: flex;

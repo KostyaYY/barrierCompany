@@ -13,7 +13,7 @@ const ContactsSection = () => {
       </div>
 
       <div className={styles.formContainer}>
-        <h3>ЗАМОВТЕ ДЗВІНОК</h3>
+        <h3>ЗАМОВИТИ ДЗВІНОК</h3>
         <form className={styles.contactForm}>
           <label htmlFor="name">Ваше ім`я</label>
           <input

@@ -1,5 +1,6 @@
 .section {
     padding: 40px 40px;
+    color:#354B5E;
 }
 .title {
     text-align: center;
@@ -7,6 +8,7 @@
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 40px;
+    color:#354B5E;
 }
 .list {
     margin: 0;
@@ -25,11 +27,16 @@
 
 .btn {
     display: flex;
-    padding: 0 32px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 16px 32px;
+    min-width: 240px;
     border: none;
     border-radius: 16px;
     cursor: pointer;
-    background-color: #C2B280;
+    color:#354B5E;
+    background-color: rgb(194, 178, 128);
     transition: all 0.3s ease;
 }
 .btn:hover {
@@ -45,4 +52,19 @@
 .btnText {
     font-size: 16px;
     font-weight: 700;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 16px 24px;
+        min-width: 200px;
+    }
+    .btnText {
+        font-size: 12px;
+    }
+    .buttonList {
+        flex-direction: column;
+        row-gap: 18px;
+    }
 }

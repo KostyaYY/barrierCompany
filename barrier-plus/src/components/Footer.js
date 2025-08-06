@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer aria-label="товари оборонного призначення" className={styles.footer}>
       <div  className={styles.company}>
-        <Image src="/images/Logo.png" alt="Логотип компанії" aria-label="Бар'єр плюс" width={80} height={80} priority />
+        <Image src="/images/logo.svg" alt="Логотип компанії" aria-label="Бар'єр плюс" width={80} height={80} priority />
         <div className={styles.contactsContainer}>
         <h3>© 2025 ТОВ `Бар`єр Плюс`. Всі права захищено.</h3>
         <div className={styles.contactBlock}>
