@@ -15,7 +15,7 @@ const ProductDetailPage = ({ params }: Props) => {
   const { id } = use(params);
   const product = products.find((p) => p.id === id);
 
-  if (!product) return <div>Продукт не знайдено</div>;
+  if (!product) return <div className={styles.errorTitle}>Продукт не знайдено</div>;
 
   const gallery = product.gallery || [];
 

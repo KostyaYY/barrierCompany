@@ -1,26 +1,26 @@
 .container {
   padding: 40px;
   margin: 0 auto;
-  /* background-image: url("../../public/images/MetallWall.png");
-  background-size: cover;
-  background-repeat: no-repeat; */
+  color: #354B5E;
 }
 
 .title {
   text-align: center;
   font-size: 2rem;
   font-weight: 900;
+  margin-top: 0;
   margin-bottom: 40px;
-  color: #E0E0E0;
 }
-
+.errorTitle {
+  font-size: 48px;
+  color: #354B5E;
+}
 .description {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: justify;
   text-indent: 2em;
   margin-top: 30px;
-  color: #E0E0E0;
 }
 
 .complects {
@@ -28,7 +28,6 @@
   line-height: 1.6;
   white-space: pre-line;
   margin-top: 30px;
-  color: #E0E0E0;
 }
 
 .galleryGrid {
@@ -39,18 +38,19 @@
 }
 
 .galleryImage {
+  border: 8px solid rgba(194, 178, 128);
   border-radius: 10px;
   width: 100%;
   aspect-ratio: 3 / 2; 
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  object-fit: fill;
+  box-shadow: 0 4px 10px rgba(194, 178, 128, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .galleryImage:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (max-width: 768px) {

@@ -8,9 +8,10 @@ const ProductsPage = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title} aria-label="Товари оборонного призначення">Перелік продукції</h2>
-      <div className={styles.grid}>
+      <ul className={styles.grid}>
         {products.map((product) => (
-          <Link key={product.id} href={`/products/${product.id}`} className={styles.card}>
+          <li key={product.id}>
+          <Link href={`/products/${product.id}`} className={styles.card}>
             <Image
               src={product.image}
               alt={product.name}
@@ -21,8 +22,9 @@ const ProductsPage = () => {
             />
             <h3 className={styles.textName} aria-label={product.name}>{product.name}</h3>
           </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

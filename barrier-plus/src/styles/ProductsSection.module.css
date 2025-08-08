@@ -1,5 +1,8 @@
 .section {
+  display: flex;
+  flex-direction: column;
   padding: 60px 40px;
+  min-height: 100vh;
   background-image: linear-gradient(
           to right,
           rgba(0, 0, 0, 0.6),
@@ -11,12 +14,9 @@
 }
 .boxLink {
   display: flex;
-  /* justify-content: center; */
-  
+  margin-top: auto;
 } 
-.boxLink:hover {
-  color: #C2B280;
-}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -35,18 +35,18 @@
 }
 .btn:hover {
   scale: 1.05;
-  border-color: #C2B280;
-  background-color: #C2B280;
+  border: none;
+  background-color: rgba(194, 178, 128, 0.5);
 }
 .btn:focus {
   scale: 1.05;
-  border-color: #C2B280;
- background-color: #C2B280;
+  border: none;
+ background-color: rgba(194, 178, 128, 0.5);
 }
 .title {
     /* text-align: center; */
     font-weight: 900;
-    font-size: 32px;
+    font-size: 48px;
     letter-spacing: 0.1em;
     margin: 0;
     margin-bottom: 12px;
