@@ -35,16 +35,15 @@
 }
 .btn:hover {
   scale: 1.05;
-  border: none;
+  border-color: rgba(194, 178, 128, 0.5);
   background-color: rgba(194, 178, 128, 0.5);
 }
 .btn:focus {
   scale: 1.05;
-  border: none;
- background-color: rgba(194, 178, 128, 0.5);
+  border-color: rgba(194, 178, 128, 0.5);
+  background-color: rgba(194, 178, 128, 0.5);
 }
 .title {
-    /* text-align: center; */
     font-weight: 900;
     font-size: 48px;
     letter-spacing: 0.1em;

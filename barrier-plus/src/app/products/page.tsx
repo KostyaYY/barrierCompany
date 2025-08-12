@@ -10,8 +10,8 @@ const ProductsPage = () => {
       <h2 className={styles.title} aria-label="Товари оборонного призначення">Перелік продукції</h2>
       <ul className={styles.grid}>
         {products.map((product) => (
-          <li key={product.id}>
-          <Link href={`/products/${product.id}`} className={styles.card}>
+          <li key={product.id} className={styles.card}>
+          <Link href={`/products/${product.id}`}>
             <Image
               src={product.image}
               alt={product.name}

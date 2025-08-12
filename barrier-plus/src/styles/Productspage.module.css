@@ -1,7 +1,7 @@
 .container {
   padding: 40px;
   text-align: center;
-  color: #354B5E;
+  color: #333;
 }
 
 .title {
@@ -13,7 +13,6 @@
 }
 
 .textName {
-  color: #000;
   font-size: 1.25rem;
   font-weight: 500;
   margin: 10px 0;
@@ -28,7 +27,6 @@
 
 .card {
   text-decoration: none;
-  color: inherit;
   background-color: rgb(194, 178, 128);
   padding: 20px;
   border-radius: 12px;
@@ -38,6 +36,7 @@
 
 .card:hover {
   transform: scale(1.03);
+  color: #354B5E;
   box-shadow: 0 6px 15px rgba(194, 178, 128, 0.8);
 }
 
