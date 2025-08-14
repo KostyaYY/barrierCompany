@@ -39,3 +39,12 @@
   font-size: 18px;
   font-weight: 600;
 }
+
+@media screen and (max-width: 480px) {
+  .partnersGrid {
+    display: block;
+  }
+  .card:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}

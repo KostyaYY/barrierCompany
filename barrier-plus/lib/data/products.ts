@@ -84,9 +84,6 @@ export const products = [
       '/images/gabion/gabion4.png',
       '/images/gabion/gabion5.png',
       '/images/gabion/gabion6.png',
-      '/images/gabion/gabion7.png',
-      '/images/gabion/gabion8.png',
-      '/images/gabion/gabion9.png',
     ],
   },
   {
@@ -166,7 +163,6 @@ export const products = [
     '/images/egoza/egoza4.png',
     '/images/egoza/egoza5.png',
     '/images/egoza/egoza6.png',
-    '/images/egoza/egoza7.png',
 ],
 
   },

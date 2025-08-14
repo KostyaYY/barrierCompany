@@ -17,14 +17,14 @@ const PartnersSection = () => {
   return (
     <section className={styles.partnersSection}>
       <h2 className={styles.title}>Наші партнери</h2>
-      <div className={styles.partnersGrid}>
+      <ul className={styles.partnersGrid}>
         {partners.map((partner, index) => (
-          <div key={index} className={styles.card}>
+          <li key={index} className={styles.card}>
             <Image src={partner.img} alt={partner.name} width={120} height={120} />
             <p className={styles.name}>{partner.name}</p>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

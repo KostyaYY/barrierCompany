@@ -22,14 +22,14 @@ const Footer = () => {
           className={styles.link}
           href="https://github.com/Aleksey0808"
         >
-          Aleksey
+          A
         </Link>
-        <span className={styles.span}>and</span>
+        <span className={styles.span}>&</span>
         <Link
           className={styles.link}
           href="https://github.com/KostyaYY"
         >
-          Konstantin
+          K
         </Link>
       </div>
     </footer>
