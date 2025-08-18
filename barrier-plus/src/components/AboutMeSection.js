@@ -1,4 +1,6 @@
 import styles from '../styles/AboutMeSection.module.css';
+import style from "../styles/AboutCompany.module.css";
+import Link from 'next/link';
 import Image from 'next/image';
 
 const AboutMeSection = () => {
@@ -29,7 +31,11 @@ const AboutMeSection = () => {
             Працюємо виключно з перевіреними логістичними партнерами, що дозволяє нам здійснювати оперативні поставки навіть у найскладніші регіони. 
             Наша команда об`єднує професіоналів з досвідом у сфері військового будівництва, інженерії та логістики. Ми пишаємося своєю місією — допомагати захисникам України.
           </p>
-       
+        <Link href={'/contacts'}>
+          <button className={style.btn}>
+            <p className={style.btnText}>Замовити консультацію</p>
+          </button>
+        </Link>
     </section>
   );
 };

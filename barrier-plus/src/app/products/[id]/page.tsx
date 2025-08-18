@@ -4,8 +4,10 @@
 import { use } from "react";
 import { products } from "../../../../lib/data/products";
 import { BackButton } from "@/components/BackBtn";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "../../../styles/ProductDetailPage.module.css";
+import style from "../../../styles/AboutCompany.module.css";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -62,6 +64,11 @@ const ProductDetailPage = ({ params }: Props) => {
   
         ))}
       </ul>
+       <Link href={'/contacts'}>
+            <button className={style.btn}>
+                <p className={style.btnText}>Замовити консультацію</p>
+            </button>
+        </Link>
     </div>
   );
 };
