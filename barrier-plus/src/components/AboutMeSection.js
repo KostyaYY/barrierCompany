@@ -1,11 +1,32 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import Loading from "@/components/Loading";
+
 import styles from '../styles/AboutMeSection.module.css';
 import style from "../styles/AboutCompany.module.css";
 import Link from 'next/link';
 import Image from 'next/image';
 
 const AboutMeSection = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isLoading, setIsLoading] = useState(false);
+
+useEffect(() => {
+  let timeoutId;
+  const handleRouteChange = () => {
+    setIsLoading(true)
+    timeoutId = setTimeout(() => setIsLoading(false),500);
+  };
+  handleRouteChange()
+  return () => clearTimeout(timeoutId);
+}, [pathname, router]);
+
   return (
     <section className={styles.AboutMeSection} aria-label="Бар'єр плюс">
+          {isLoading && <Loading/>}
           <h2 className={styles.title} aria-label="для збройних сил україни">Постачальник металевих виробів оборонного призначення</h2>
            <Image
           src="/about/egoza1.png"

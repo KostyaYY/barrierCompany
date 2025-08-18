@@ -8,7 +8,7 @@ const Footer = () => {
       <div  className={styles.company}>
         <Image src="/images/logo.svg" alt="Логотип компанії" aria-label="Бар'єр плюс" width={80} height={80} priority />
         <div className={styles.contactsContainer}>
-        <h3>© 2025 ТОВ `Бар`єр Плюс`. Всі права захищено.</h3>
+        <h3>© 2025 Компанія `Бар`єр Плюс`</h3>
         <div className={styles.contactBlock}>
           <p>Телефон: <a href="tel:+380734220391">+38 0 (98) 955 04 64</a></p>
           <p>Електронна пошта: <a href="mailto:barrierplusukraine@gmail.com">barrierplusukraine@gmail.com</a></p>

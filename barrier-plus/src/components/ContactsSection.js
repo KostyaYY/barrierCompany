@@ -1,8 +1,29 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import Loading from "@/components/Loading";
+
 import styles from '../styles/ContactsSection.module.css';
 
 const ContactsSection = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isLoading, setIsLoading] = useState(false);
+
+useEffect(() => {
+  let timeoutId;
+  const handleRouteChange = () => {
+    setIsLoading(true)
+    timeoutId = setTimeout(() => setIsLoading(false),500);
+  };
+  handleRouteChange()
+  return () => clearTimeout(timeoutId);
+}, [pathname, router]);
+
   return (
     <section className={styles.contactsSection}>
+      {isLoading && <Loading/>}
       <div className={styles.contactsContainer}>
         <h2>НАШІ КОНТАКТИ</h2>
         <div className={styles.contactBlock}>

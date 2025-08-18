@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import { Geist, Geist_Mono, Roboto, Roboto_Serif } from "next/font/google";
+import { Roboto, Roboto_Serif } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
+const geistSans = Roboto({
   variable: "--font-roboto-serif",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Roboto_Serif({
   variable: "--font-roboto-serif",
   subsets: ["latin"],
 });
