@@ -35,13 +35,13 @@ useEffect(() => {
 
       <div className={styles.formContainer}>
         <h3>ЗАМОВИТИ ДЗВІНОК</h3>
-        <form className={styles.contactForm}>
+        <form className={styles.contactForm} action="https://formsubmit.co/barrierplusukraine@gmail.com" method="POST">
           <label htmlFor="name">Ваше ім`я</label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Steve"
+            placeholder="Миколай"
             required
           />
           <label htmlFor="email">Ваша електронна адреса</label>
@@ -49,7 +49,7 @@ useEffect(() => {
             type="email"
             id="email"
             name="email"
-            placeholder="steve@mail.com"
+            placeholder="mikolay@mail.com"
             required
           />
           <label htmlFor="phone">Номер телефону</label>

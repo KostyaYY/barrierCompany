@@ -64,9 +64,12 @@
 .contactForm input {
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 2px solid #C2B280;
+  border-radius: 8px;
   color:#C2B280;
+}
+.contactForm input:focus {
+  border-color: transparent;
 }
 
 .contactForm button {
