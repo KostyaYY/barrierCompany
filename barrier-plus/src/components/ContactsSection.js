@@ -35,7 +35,7 @@ useEffect(() => {
 
       <div className={styles.formContainer}>
         <h3>ЗАМОВИТИ ДЗВІНОК</h3>
-        <form className={styles.contactForm} action="https://formsubmit.co/barrierplusukraine@gmail.com" method="POST">
+        <form className={styles.contactForm} action="https://formsubmit.co/el/vabeme" method="POST">
           <label htmlFor="name">Ваше ім`я</label>
           <input
             type="text"
