@@ -35,7 +35,9 @@ useEffect(() => {
 
       <div className={styles.formContainer}>
         <h3>ЗАМОВИТИ ДЗВІНОК</h3>
-        <form className={styles.contactForm} action="https://formsubmit.co/el/vabeme" method="POST">
+        <form className={styles.contactForm} action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6fe05f06-499b-49f1-8a31-c055d9839407" />
+           
           <label htmlFor="name">Ваше ім`я</label>
           <input
             type="text"
@@ -60,6 +62,7 @@ useEffect(() => {
             placeholder="+38(0"
             required
           />
+           <input type="hidden" name="redirect" value="https://web3forms.com/success" />
           <button type="submit">Замовлення</button>
         </form>
       </div>
