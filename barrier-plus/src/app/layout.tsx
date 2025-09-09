@@ -16,7 +16,10 @@ const geistMono = Roboto_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Barrier Plus",
+  title: {
+    default: "Barrier Plus | Барʼєр Плюс | Барьер Плюс",
+    template: "%s | Barrier Plus",
+  },
   description: "Фортифікації оборонного призачення з військовим характером",
 };
 
