@@ -63,7 +63,7 @@ useEffect(() => {
             required
           />
            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-          <button type="submit">Замовлення</button>
+          <button type="submit" aria-labelledby="Єгоза МПП Габіон Метал">Замовлення</button>
         </form>
       </div>
     </section>

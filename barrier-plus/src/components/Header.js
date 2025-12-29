@@ -21,9 +21,9 @@ const Header = () => {
   };
 
   return (
-    <header aria-label="товари оборонного призначення" className={styles.header}>
+    <header aria-labelledby="товари оборонного призначення" className={styles.header}>
       <Link href="/" className={styles.logo}>
-        <Image src={Logo} alt="Логотип компанії" aria-label="Бар'єр плюс" width={120} height={120} priority />
+        <Image src={Logo} alt="Логотип компанії" aria-label="Бар'єр" width={120} height={120} priority />
       </Link>
 
       <button className={styles.burger} onClick={toggleMenu}>
@@ -36,17 +36,17 @@ const Header = () => {
         />
       </button>
 
-      <nav aria-label="Пошук товарів оборонного призначення" className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
-        <button aria-label="перелік товарів" onClick={() => handleNavigate('/products')} className={styles.underline}>
+      <nav aria-labelledby="Пошук товарів оборонного призначення" className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
+        <button aria-labelledby="перелік товарів" onClick={() => handleNavigate('/products')} className={styles.underline}>
           Товари
         </button>
-        <button aria-label="про компанію Бар'єр плюс" onClick={() => handleNavigate('/about')} className={styles.underline}>
+        <button aria-labelledby="про компанію Бар'єр плюс" onClick={() => handleNavigate('/about')} className={styles.underline}>
           Про компанію
         </button>
-        <button aria-label="метало прокат" onClick={() =>  handleNavigate('/partners')} className={styles.underline}>
+        <button aria-labelledby="метало прокат" onClick={() =>  handleNavigate('/partners')} className={styles.underline}>
           Наші партнери
         </button>
-        <button aria-label="телефон та електронна пошта" onClick={() => handleNavigate('/contacts')} className={styles.underline}>
+        <button aria-labelledby="телефон та електронна пошта" onClick={() => handleNavigate('/contacts')} className={styles.underline}>
           Контакти
         </button>
       </nav>

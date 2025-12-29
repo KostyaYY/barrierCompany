@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const ProductsSection = () => {
     return (
-        <section aria-label="український перелік продукції оборонного призначення" className={styles.section}>
+        <section aria-labelledby="Єгоза МПП Габіон Метал" className={styles.section}>
         <h1
-        aria-label="Якісна продукція"
+        aria-labelledby="Єгоза МПП Габіон Метал"
         className={styles.title}
         >
           Надійна та якісна продукція оборонного призначення

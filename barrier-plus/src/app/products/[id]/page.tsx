@@ -42,7 +42,7 @@ const ProductDetailPage = ({ params }: Props) => {
       )}
       <p className={styles.description}>{product.description}</p>
       <p className={styles.complects}>{product.complectText}</p>
-      <h3 className={styles.featuresTitle}>Характиристики та ціни:</h3>
+      <h3 aria-labelledby="Єгоза МПП Габіон Метал" className={styles.featuresTitle}>Характиристики та ціни:</h3>
       <ul>
         {product.types.map((type) => (
           <li key={type.id} className={styles.featuresItem}>

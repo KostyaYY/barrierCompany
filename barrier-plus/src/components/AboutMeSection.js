@@ -27,10 +27,10 @@ useEffect(() => {
   return (
     <section className={styles.AboutMeSection} aria-label="Бар'єр плюс">
           {isLoading && <Loading/>}
-          <h2 className={styles.title} aria-label="для збройних сил україни">Постачальник металевих виробів оборонного призначення</h2>
+          <h2 className={styles.title} aria-labelledby="для збройних сил україни">Постачальник металевих виробів оборонного призначення</h2>
            <Image
           src="/about/egoza1.png"
-          alt=""
+          alt="Єгоза"
           width={300}
           height={200}
           className={styles.image1}
@@ -42,7 +42,7 @@ useEffect(() => {
           </p>
           <Image
             src="/about/tooth2.png"
-            alt=""
+            alt="Зуби дракона"
             width={300}
             height={200}
             className={styles.image2}
@@ -53,7 +53,7 @@ useEffect(() => {
             Наша команда об`єднує професіоналів з досвідом у сфері військового будівництва, інженерії та логістики. Ми пишаємося своєю місією — допомагати захисникам України.
           </p>
         <Link href={'/contacts'}>
-          <button className={style.btn}>
+          <button aria-labelledby="Замовити" className={style.btn}>
             <p className={style.btnText}>Замовити консультацію</p>
           </button>
         </Link>

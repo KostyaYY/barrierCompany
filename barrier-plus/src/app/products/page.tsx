@@ -6,8 +6,8 @@ import { products } from "../../../lib/data/products";
 
 const ProductsPage = () => {
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title} aria-label="Товари оборонного призначення">Перелік продукції</h2>
+    <div aria-labelledby="Єгоза МПП Габіон Метал" className={styles.container}>
+      <h2 className={styles.title} aria-labelledby="Єгоза МПП Габіон Метал">Перелік продукції</h2>
       <ul className={styles.grid}>
         {products.map((product) => (
           <li key={product.id} className={styles.card}>
@@ -20,7 +20,7 @@ const ProductsPage = () => {
               className={styles.image}
               aria-label={product.name}
             />
-            <h3 className={styles.textName} aria-label={product.name}>{product.name}</h3>
+            <h3 className={styles.textName} aria-labelledby={product.name}>{product.name}</h3>
           </Link>
           </li>
         ))}

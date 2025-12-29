@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer aria-label="товари оборонного призначення" className={styles.footer}>
+    <footer aria-labelledby="Єгоза МПП Габіон Метал" className={styles.footer}>
       <div  className={styles.company}>
         <Image src="/images/logo.svg" alt="Логотип компанії" aria-label="Бар'єр плюс" width={80} height={80} priority />
         <div className={styles.contactsContainer}>
@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       </div>
      <div>
-        <span>© 2025 All rights reserved Developed a project:{' '}</span>
+        <span aria-labelledby="Єгоза МПП Габіон Метал">© 2025 All rights reserved Developed a project:{' '}</span>
         <Link
           className={styles.link}
           href="https://github.com/Aleksey0808"

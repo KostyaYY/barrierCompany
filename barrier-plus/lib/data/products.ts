@@ -12,7 +12,7 @@ export const products = [
       size: "1000х1000х2000, 75х75",
       diametr: "⌀4мм",
       length: null,
-      price: "2 739,00"
+      price: "2 200,00"
     },
     {
       id: '2',
@@ -54,7 +54,7 @@ export const products = [
       size: "1000х1000х2000, 75х75",
       diametr: "⌀5мм",
       length: null,
-      price: "4 100,00"
+      price: "3 500,00"
     },
     {
       id: '8',
@@ -105,7 +105,7 @@ export const products = [
       size: "Ф1100/7",
       diametr: null,
       length: null,
-      price: "4 000,00"
+      price: "2 600,00"
     },
     {
       id: '3',
