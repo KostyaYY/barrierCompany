@@ -31,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
+      <head>
+        <meta charSet="utf-8" />
+      </head>
       <body aria-labelledby="Габіон Єгоза МПП Метал" className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header/>
           {children}
