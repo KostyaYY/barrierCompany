@@ -34,9 +34,11 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
       </head>
-      <body aria-labelledby="Габіон Єгоза МПП Метал" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body aria-labelledby="page-title" className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header/>
-          {children}
+          <main id="page-title">
+            {children}
+          </main>
           <ScrollToTopButton />
         <Footer/>
          {/* Google Ads tag (gtag.js) */}
