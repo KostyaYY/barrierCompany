@@ -27,7 +27,7 @@ useEffect(() => {
       <div className={styles.contactsContainer}>
         <h2>НАШІ КОНТАКТИ</h2>
         <div className={styles.contactBlock}>
-          <p>Телефон: <a href="tel:+380734220391">+38 0 (98) 955 04 64</a></p>
+          <p>Телефон: <a href="tel:+380639662916">+38 0 (63) 966 29 16</a></p>
           <p>Електронна пошта: <a href="mailto:barrierplusukraine@gmail.com">barrierplusukraine@gmail.com</a></p>
           <p>Адрес: Київ, бульвар Вацлава Гавела, буд 8, корпус 9</p>
         </div>
