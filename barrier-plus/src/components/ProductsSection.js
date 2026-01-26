@@ -6,12 +6,12 @@ const ProductsSection = () => {
     return (
         <section aria-labelledby="Єгоза МПП Габіон Метал" className={styles.section}>
         <h1
-        aria-labelledby="Єгоза МПП Габіон Метал"
+        aria-labelledby="Єгоза"
         className={styles.title}
         >
-          Надійна та якісна продукція оборонного призначення
+          Надійна та якісна продукція захисного призначення
           </h1>
-          <p className={styles.textAfter}>Від міцного металу до непохитної оборони – будуємо безпеку разом!</p>
+          <p className={styles.textAfter}>Від міцного металу до непохитного захисту – будуємо безпеку разом!</p>
         <div className={styles.boxLink}>
         <button className={styles.btn}>
           <Link href="/products" className={styles.wrapper} aria-label="Товари">
