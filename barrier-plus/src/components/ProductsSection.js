@@ -9,7 +9,7 @@ const ProductsSection = () => {
         aria-labelledby="Єгоза МПП Габіон Метал"
         className={styles.title}
         >
-          Надійна та якісна продукція оборонного призначення
+          Надійна та якісна продукція оборонного призначення 
           </h1>
           <p className={styles.textAfter}>Від міцного металу до непохитної оборони – будуємо безпеку разом!</p>
         <div className={styles.boxLink}>
