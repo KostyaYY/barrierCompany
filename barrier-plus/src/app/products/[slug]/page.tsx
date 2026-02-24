@@ -17,7 +17,7 @@ interface Props {
 }
 
 const ProductDetailPage = ({ params }: Props) => {
-  const { id, slug } = use(params);
+  const { slug } = use(params);
   const product = products.find((p) => p.slug === slug);
   console.log(use(params))
   
