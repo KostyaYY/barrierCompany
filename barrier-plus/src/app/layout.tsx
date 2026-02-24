@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   description: "Фортифікації оборонного призачення з військовим характером. Габіони, Єгоза, МПП, металеві конструкії.",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{

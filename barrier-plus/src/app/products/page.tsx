@@ -11,7 +11,8 @@ const ProductsPage = () => {
       <ul className={styles.grid}>
         {products.map((product) => (
           <li key={product.id} className={styles.card}>
-          <Link href={`/products/${product.id}`}>
+          {/* <Link href={`/products/${product.id}`}> */}
+          <Link href={`/products/${product.slug}`}>
             <Image
               src={product.image}
               alt={product.name}

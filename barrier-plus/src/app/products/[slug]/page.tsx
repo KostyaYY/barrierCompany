@@ -10,12 +10,16 @@ import styles from "../../../styles/ProductDetailPage.module.css";
 import style from "../../../styles/AboutCompany.module.css";
 
 interface Props {
-  params: Promise<{ id: string }>;
+  params: Promise<{ 
+    id: string; 
+    slug: string 
+  }>;
 }
 
 const ProductDetailPage = ({ params }: Props) => {
-  const { id } = use(params);
-  const product = products.find((p) => p.id === id);
+  const { id, slug } = use(params);
+  const product = products.find((p) => p.slug === slug);
+  console.log(use(params))
   
   if (!product) return <div className={styles.errorTitle}>Продукт не знайдено</div>;
 

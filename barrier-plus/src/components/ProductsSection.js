@@ -9,7 +9,9 @@ const ProductsSection = () => {
         aria-labelledby="Єгоза"
         className={styles.title}
         >
+
           Надійна та якісна продукція захисного призначення
+
           </h1>
           <p className={styles.textAfter}>Від міцного металу до непохитного захисту – будуємо безпеку разом!</p>
         <div className={styles.boxLink}>
