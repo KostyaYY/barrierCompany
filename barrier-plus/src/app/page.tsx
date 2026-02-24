@@ -6,7 +6,7 @@ import AboutCompany from "../components/AboutCompany";
 export default function Home() {
   return (
     <>
-      <main id="products" aria-label="Продукція оборонного призначення" className={styles.main}>
+      <main id="products" aria-labelledby="Металеві вироби" className={styles.main}>
         <ProductsSection />
         <AboutCompany/>
         <PartnersSection/>
