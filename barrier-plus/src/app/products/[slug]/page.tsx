@@ -11,7 +11,6 @@ import style from "../../../styles/AboutCompany.module.css";
 
 interface Props {
   params: Promise<{ 
-    id: string; 
     slug: string 
   }>;
 }
