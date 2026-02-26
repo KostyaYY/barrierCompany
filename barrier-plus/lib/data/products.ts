@@ -1,5 +1,5 @@
 
-import { generateSlug } from '../../src/utils/slug';
+import { generateSlug } from '../../src/utils/slugify';
 
 export const products = [
   {
