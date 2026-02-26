@@ -21,7 +21,16 @@ export const metadata: Metadata = {
     default: "Барʼєр Плюс | Барьер Плюс",
     template: "%s | Барʼєр Плюс",
   },
-  description: "Фортифікації оборонного призачення з військовим характером. Габіони, Єгоза, МПП, металеві конструкії.",
+  description: "Фортифікації захисного призачення зі стальним характером. Габіони, Єгоза, МПП, металеві конструкії.",
+  keywords: 'юридичні послуги, бізнес-консалтинг, Justyfin Partners, новини, аналітика',
+  openGraph: {
+    title: 'Барʼєр Плюс',
+    description: 'Професійні рішення для бізнесу.',
+    url: 'https://www.barrierplus.store', // Заміни на реальний домен
+    siteName: 'Justyfin Partners',
+    locale: 'uk_UA',
+    type: 'website',
+  },
 };
 
 
@@ -44,6 +53,23 @@ export default function RootLayout({
           <ScrollToTopButton />
         <Footer/>
          {/* Google Ads tag (gtag.js) */}
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Барʼєр Плюс",
+              url: "https://www.barrierplus.store",
+              logo: "/logo.png",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "barrierplusukraine@gmail.com",
+                contactType: "customer service",
+              },
+            }),
+          }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17720798010"
           strategy="afterInteractive"
