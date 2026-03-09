@@ -1,4 +1,4 @@
-// app/products/[id]/page.tsx
+// app/products/[slug]/page.tsx
 "use client";
 
 import { use } from "react";
@@ -18,7 +18,7 @@ interface Props {
 const ProductDetailPage = ({ params }: Props) => {
   const { slug } = use(params);
   const product = products.find((p) => p.slug === slug);
-  console.log(use(params))
+  // console.log(use(params))
   
   if (!product) return <div className={styles.errorTitle}>Продукт не знайдено</div>;
 
@@ -35,7 +35,7 @@ const ProductDetailPage = ({ params }: Props) => {
             <Image
               key={index}
               src={img}
-              alt={`Фото ${index + 1}`}
+              alt={`${product.name} — купити в Україні`}
               width={300}
               height={200}
               className={styles.galleryImage}

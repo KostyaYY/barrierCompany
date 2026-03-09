@@ -1,4 +1,3 @@
-
 import { generateSlug } from '../../src/utils/slugify';
 
 export const products = [

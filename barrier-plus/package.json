@@ -13,7 +13,9 @@
     "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "transliteration": "^2.6.1"
+    "transliteration": "^2.6.1",
+    "next-seo": "^7.2.0",
+    "next-sitemap": "^4.2.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
